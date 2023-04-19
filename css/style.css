@@ -78,6 +78,7 @@ a:active {
 }
 
 /*index.html*/
+
 body {
 	background-color: #fff3e5;
 }
@@ -88,7 +89,7 @@ img#headshot {
 	margin-right: auto;
 	width: 100px;
 	height: 100px;
-	padding-top: 80px;
+	padding-top: 5em;
 	clip-path: circle(46px at 50px 135px);
 }
 
@@ -140,6 +141,7 @@ main {
 	display: flex;
 	justify-content: center;
 	column-gap: 2em;
+  margin-top: .75em;
 }
 
 .info {
@@ -322,7 +324,7 @@ h3.bunny-section-subheader {
 .bun {
   box-shadow: rgb(0 0 0 / 7%) 0px 1px 2px, rgb(0 0 0 / 7%) 0px 2px 4px, rgb(0 0 0 / 7%) 0px 4px 8px, rgb(0 0 0 / 7%) 0px 8px 16px, rgb(0 0 0 / 7%) 0px 16px 32px, rgb(0 0 0 / 7%) 0px 32px 64px;
   background-color: white;
-  width: 25%;
+  width: 400px;
   padding: 2em;
   font-size: 10px;
   height: fit-content;
@@ -537,4 +539,64 @@ footer > p {
   border-color: #636B46;
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 7%) 0px 1px 2px, rgb(0 0 0 / 7%) 0px 2px 4px, rgb(0 0 0 / 7%) 0px 4px 8px, rgb(0 0 0 / 7%) 0px 8px 16px, rgb(0 0 0 / 7%) 0px 16px 32px, rgb(0 0 0 / 7%) 0px 32px 64px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+max-width: 550px;
+position: relative;
+margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  padding: 8px 16px;
+  color: #282e1c;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+#bun-container {
+height: 520px;
+display: flex;
+justify-content: center;
+align-items: center;
+column-gap: 3em;
+visibility: hidden;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.prev:hover,
+.next:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
 }

@@ -1,116 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Holland Lop Bunnies for Sale</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;700&family=Dosis:wght@400;700&family=Londrina+Solid&family=Sansita&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/info.css' rel='stylesheet'>
-    <link rel="icon" href="assets/jumping-rabbit-logo-simple-mono-line-free-vector.jpg">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;700&family=Dosis:wght@400;700&family=Londrina+Solid&family=Sansita&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/info.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="assets/jumping-rabbit-logo-simple-mono-line-free-vector.jpg"
+    />
+    <script src="js/script.js"></script>
   </head>
-  <body id="bunny-body">
+  <body id="bunny-body" >
     <header>
       <nav>
         <ul>
           <li><a href="index.html" data-text="Homepage">Homepage</a></li>
-          <li id="onpage"><a href="#" data-text="Holland Lop Bunnies for Sale">Holland Lop Bunnies for Sale</a></li>
-          <li><a href="floriography.html" data-text="Learn About Floriography!">Learn About Floriography!</a></li>
+          <li id="onpage">
+            <a href="#" data-text="Holland Lop Bunnies for Sale"
+              >Holland Lop Bunnies for Sale</a
+            >
+          </li>
+          <li>
+            <a href="floriography.html" data-text="Learn About Floriography!"
+              >Learn About Floriography!</a
+            >
+          </li>
+          <li><a href="map.html">Map</a></li>
         </ul>
       </nav>
       <h1 id="bunny-header">Holland Lop Bunnies for Sale!</h1>
     </header>
-      <div id="about" class="bunny-font">
-        <p>Angie's Fun Farm is a small rabbitry located on the south side of Chicago, Illinois, and we currently
-          breed Holland lops bunnies for show and pets. We strive to breed rabbits that conform to the ARBA Standard of
-          Perfection
-          and, most importantly, are gentle and cheerful.</p>
-        <p> Our rabbitry raises our bunnies from birth. We give them plenty of social interaction with children and other
-          pets,
-          as well as plenty of love and attention. We treat all of the bunnies as a part of our family, and we hope that all
-          rabbits
-          we raise go to a pet home that will bring them so much joy and care.</p>
-        <p>If you are interested in a bunny, please watch the video below to get a basic understanding of what it entails to
-          be a rabbit owner:</p>
-        <iframe src="https://www.youtube.com/embed/1s-ydKa7nPA" title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <p>Once you are ready to start the process, please read the <a
-            href="https://rabbit.org/adoption/adoption-policies.html">
-            adoption policies</a> before calling or texting the following number: <strong>(123)-456-7890</strong>.</p>
-      </div>
+    <div id="about" class="bunny-font">
+      <p>
+        Angie's Fun Farm is a small rabbitry located on the south side of
+        Chicago, Illinois, and we currently breed Holland lops bunnies for show
+        and pets. We strive to breed rabbits that conform to the ARBA Standard
+        of Perfection and, most importantly, are gentle and cheerful.
+      </p>
+      <p>
+        Our rabbitry raises our bunnies from birth. We give them plenty of
+        social interaction with children and other pets, as well as plenty of
+        love and attention. We treat all of the bunnies as a part of our family,
+        and we hope that all rabbits we raise go to a pet home that will bring
+        them so much joy and care.
+      </p>
+      <p>
+        If you are interested in a bunny, please watch the video below to get a
+        basic understanding of what it entails to be a rabbit owner:
+      </p>
+      <iframe
+        src="https://www.youtube.com/embed/1s-ydKa7nPA"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <p>
+        Once you are ready to start the process, please read the
+        <a href="https://rabbit.org/adoption/adoption-policies.html">
+          adoption policies</a
+        >
+        before calling or texting the following number:
+        <strong>(123)-456-7890</strong>.
+      </p>
+    </div>
     <main>
       <div id="available">
         <h2 class="bunny-subheader">Available Buns</h2>
         <div>
           <i id="tooltip" class="gg-info">
-            <span id="tooltip-text">Hover over the images to learn more about each bunny.</span>
+            <span id="tooltip-text"
+              >Hover over the images to learn more about each bunny.</span
+            >
           </i>
         </div>
       </div>
-      <div id="flex">
-        <div class="bun">
-          <h3 class="bunny-section-subheader">Blue Eyed White Doe</h3>
-          <div class="bun-info bunny-font">
-            <p><strong>Cost:</strong> $150</p> 
-            <p><strong>Mom:</strong> Frosty x <strong>Dad:</strong> Yeti</p>
-            <p><strong>Age:</strong> Two months old</p>
+      <div id="bun-container">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <div id="slideshow-container">
+          <div class="bun fade">
+            <h3 class="bunny-section-subheader">Blue Eyed White Doe</h3>
+            <div class="bun-info bunny-font">
+              <p><strong>Cost:</strong> $150</p>
+              <p><strong>Mom:</strong> Frosty x <strong>Dad:</strong> Yeti</p>
+              <p><strong>Age:</strong> Two months old</p>
+            </div>
+            <div class="container">
+              <img
+                class="bunny-image"
+                src="assets/white-bunny.jpg"
+                alt="Blue eyed white doe holland lop bunny"
+              />
+              <div class="container-text bunny-font">
+                <p>
+                  A adorable, sweet tempered bunny. She prefers her adults to go
+                  to quiet homes with older children or adults only. She doesn’t
+                  mind dogs or cats and she will need to be spayed.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="container">
-            <img class="bunny-image" src="assets/white-bunny.jpg" alt="Blue eyed white doe holland lop bunny">
-            <div class="container-text bunny-font">
-              <p>A adorable, sweet tempered bunny. She prefers her adults to go to quiet homes with older children or adults only.
-                She doesn’t mind dogs or cats and she will need to be spayed.</p>
+          <div class="bun fade">
+            <h3 class="bunny-section-subheader">Dark Eyed Orange Doe</h3>
+            <div class="bun-info bunny-font">
+              <p><strong>Cost:</strong> $160</p>
+              <p>
+                <strong>Mom:</strong> Frankie x <strong>Dad:</strong> Chester
+              </p>
+              <p><strong>Age:</strong> Four months old</p>
+            </div>
+            <div class="container">
+              <img
+                class="bunny-image"
+                src="assets/orange-bunny.jpg"
+                alt="Dark eyed orange doe holland lop bunny"
+              />
+              <div class="container-text bunny-font">
+                <p>
+                  This doe requires a lot of space to run around! She is a very
+                  active and upbeat bun that enjoys chew toys. Since she is
+                  quite the wild spirit, but doesn't mind children and other
+                  pets.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bun fade">
+            <h3 class="bunny-section-subheader">Dark Eyed Grey Buck</h3>
+            <div class="bun-info bunny-font">
+              <p><strong>Cost:</strong> $150</p>
+              <p><strong>Mom:</strong> Brie x <strong>Dad:</strong> Chandler</p>
+              <p><strong>Age:</strong> Three months old</p>
+            </div>
+            <div class="container">
+              <img
+                class="bunny-image"
+                src="assets/grey-bunny.jpg"
+                alt="Dark eyed grey buck holland lop bunny"
+              />
+              <div class="container-text bunny-font">
+                <p>
+                  This buck would adjust well to a faster paced home with kids
+                  or relaxing on the floor in an adult household. He loves
+                  treats a lot and also likes running really fast in a playpen.
+                  He has a really cute personality and I’m sad to see him go!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bun fade">
+            <h3 class="bunny-section-subheader">
+              Dark Eyed Embre Cream/Brown Buck
+            </h3>
+            <div class="bun-info bunny-font">
+              <p><strong>Cost:</strong> $175</p>
+              <p>
+                <strong>Mom:</strong> Claire x <strong>Dad:</strong> Brownie
+              </p>
+              <p><strong>Age:</strong> Three months old</p>
+            </div>
+            <div class="container">
+              <img
+                class="bunny-image"
+                src="assets/white-brown-bunny.jpg"
+                alt="Dark eyed embre cream/brown buck holland lop bunny"
+              />
+              <div class="container-text bunny-font">
+                <p>
+                  A kind, adorable buck that enjoys sunbathing. Even though he's
+                  quite the quick runner, he enjoys laying down and watching TV.
+                  He gets along very well with cats and dogs, but prefers to
+                  just be around children and adults only.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="bun">
-          <h3 class="bunny-section-subheader">Dark Eyed Orange Doe</h3>
-          <div class="bun-info bunny-font">
-            <p><strong>Cost:</strong> $160</p>
-            <p><strong>Mom:</strong> Frankie x <strong>Dad:</strong> Chester</p>
-            <p><strong>Age:</strong> Four months old</p>
-          </div>
-          <div class="container">
-            <img class="bunny-image" src="assets/orange-bunny.jpg" alt="Dark eyed orange doe holland lop bunny">
-            <div class="container-text bunny-font">
-              <p>This doe requires a lot of space to run around! She is a very active and upbeat bun that enjoys chew toys.
-                Since she is quite the wild spirit, but doesn't mind children and other pets.</p>
-            </div>
-          </div>
-        </div>
-        <div class="bun">
-          <h3 class="bunny-section-subheader">Dark Eyed Grey Buck</h3>
-          <div class="bun-info bunny-font">
-            <p><strong>Cost:</strong> $150</p>
-            <p><strong>Mom:</strong> Brie x <strong>Dad:</strong> Chandler</p>
-            <p><strong>Age:</strong> Three months old</p>
-          </div>
-          <div class="container">
-            <img class="bunny-image" src="assets/grey-bunny.jpg" alt="Dark eyed grey buck holland lop bunny">
-            <div class="container-text bunny-font">
-              <p>This buck would adjust well to a faster paced home with kids or relaxing on the floor in an adult household.
-              He loves treats a lot and also likes running really fast in a playpen. He has a really cute personality and I’m sad to see him go! </p>
-            </div>
-          </div>
-        </div>
-        <div class="bun">
-          <h3 class="bunny-section-subheader">Dark Eyed Embre Cream/Brown Buck</h3>
-          <div class="bun-info bunny-font">
-            <p><strong>Cost:</strong> $175</p> 
-            <p><strong>Mom:</strong> Claire x <strong>Dad:</strong> Brownie</p>
-            <p><strong>Age:</strong> Three months old</p>
-          </div>
-          <div class="container">
-            <img class="bunny-image" src="assets/white-brown-bunny.jpg" alt="Dark eyed embre cream/brown buck holland lop bunny">
-            <div class="container-text bunny-font">
-              <p>A kind, adorable buck that enjoys sunbathing. Even though he's quite the quick runner, he enjoys laying down and watching TV.
-              He gets along very well with cats and dogs, but prefers to just be around children and adults only. </p>
-            </div>
-          </div>
-        </div>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
     </main>
   </body>

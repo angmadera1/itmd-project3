@@ -1,3 +1,34 @@
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("bun");
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+let slideIndex = 1;
+window.onload = function() {
+  showSlides(slideIndex);
+  var adkl = document.getElementById("bun-container");
+  adkl.style.visibility = 'visible';
+};
+  
+
+
+
 let map;
 
 async function initMap() {
@@ -8,7 +39,7 @@ async function initMap() {
   //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
 
-   // Create an info window to share between markers.
+  // Create an info window to share between markers.
   const infoWindow = new google.maps.InfoWindow();
 
   // The map, centered at Uluru
@@ -18,10 +49,10 @@ async function initMap() {
     mapId: "DEMO_MAP_ID",
   });
 
-//array consisting of different location coordinates
+  //array consisting of different location coordinates
   const locations = [
     [{ lat: 41.8349, lng: -87.6270 }, "Illinois Institute of Technology", "assets/favicon.ico"],
-    [{ lat: 42.0565, lng: -87.6753  }, "Northwestern University", "assets/northwestern-logo.jpeg"],
+    [{ lat: 42.0565, lng: -87.6753 }, "Northwestern University", "assets/northwestern-logo.jpeg"],
     [{ lat: 42.0453, lng: -87.6811 }, "Evanson McGaw YMCA", "assets/ymca-logo.png"],
     [{ lat: 41.9811, lng: -87.8397 }, "UScellular Business Office", "assets/uscc-logo.png"],
     [{ lat: 41.8816, lng: -87.6301 }, "J.P. Morgan Chase", "assets/jp-morgan-chase-logo.png"]
