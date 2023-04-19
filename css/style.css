@@ -465,3 +465,18 @@ footer > p {
   margin: 0px;
   text-align: center;
 }
+
+/*map styles*/
+#heading-map {
+  padding-top: 2rem;
+  margin-bottom: .5em;
+  font-size: 2.5em;
+  font-family: 'Patua One', cursive;
+  color: #636B46;
+}
+
+#map {
+  height: 500px;
+  width: 60%;
+  margin: auto;
+}
