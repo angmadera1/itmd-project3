@@ -22,8 +22,8 @@ function showSlides(n) {
 let slideIndex = 1;
 window.onload = function() {
   showSlides(slideIndex);
-  var adkl = document.getElementById("bun-container");
-  adkl.style.visibility = 'visible';
+  var slider = document.getElementById("bun-container");
+  slider.style.visibility = 'visible';
 };
   
 
