@@ -245,6 +245,29 @@ p {
   }
 }
 
+@media only screen and (max-width: 600px) {  
+  #skills {
+    display: block;
+  }
+
+  #skills ul > li {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 580px) {  
+  img#headshot {
+    padding-top: 9em;
+    clip-path: circle(46px at 50px 200px);
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+  }
+}
+
 /*rabbitry styles */
 body#bunny-body {
   background-color: #c5b6b5;
